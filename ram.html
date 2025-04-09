@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        fieldset {
+            width: 60%;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        input, textarea {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contact Form.</h1>
+
+    <fieldset>
+        <p><b>Using the following links you can navigate to another page.</b></p>
+        <a href="#">Page 1</a>
+        <a href="#">Page 2</a>
+        <a href="#">Page 3</a>
+    </fieldset>
+
+    <h2><b>Please fill in following form.</b></h2>
+
+    <fieldset>
+        <form>
+            <table cellpadding="5">
+                <tr>
+                    <td><b>Last Name:</b></td>
+                    <td><input type="text" name="lastname"></td>
+                </tr>
+                <tr>
+                    <td><b>First Name:</b></td>
+                    <td><input type="text" name="firstname"></td>
+                </tr>
+                <tr>
+                    <td><b>Email:</b></td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><b>Address:</b></td>
+                    <td><input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <td><b>Gender:</b></td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                        <input type="radio" name="gender" value="others"> Others
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Remarks:</b></td>
+                    <td><textarea rows="4" cols="25"></textarea></td>
+                </tr>
+                <tr>
+                    <td><b>Subscribe:</b></td>
+                    <td><input type="checkbox" name="subscribe"> Subscribe</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+</body>
+</html>
